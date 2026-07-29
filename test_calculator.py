@@ -9,19 +9,19 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(-15, -30), -45)
 
     def test_subtract(self):
-        self.assertEqual(sub(5, 2), 3)
-        self.assertEqual(sub(-10, 40), -50)
-        self.assertEqual(sub(-15, -15), 0)
+        self.assertEqual(subtract(5, 2), 3)
+        self.assertEqual(subtract(-10, 40), -50)
+        self.assertEqual(subtract(-15, -15), 0)
     # ##########################
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
-        self.assertEqual(mult(10, 3), 30)
-        self.assertFalse(mult(10, 3),15)
-        self.assertTrue(mult(5, 4))
+        self.assertEqual(mul(10, 3), 30)
+        self.assertFalse(mul(10, 3),15)
+        self.assertTrue(mul(5, 4))
 
     def test_divide(self): # 3 assertions
-        self.assertNotEqual((10,3), (0,0))
+        self.assertNotEqual(div(10,3), (0,0))
         self.assertEqual(div(6,3),2)
         self.assertEqual(div(25,5),5)
     # ##########################

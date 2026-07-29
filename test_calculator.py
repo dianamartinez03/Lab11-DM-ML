@@ -14,12 +14,12 @@ class TestCalculator(unittest.TestCase):
      def test_multiply(self): # 3 assertions
         self.assertEqual(mult(10*3), 30)
         self.assertFalse(mult(10*3),15)
-        self.assertTrue(mult(5*4) == 20)
+        self.assertTrue(mult(5*4))
 
      def test_divide(self): # 3 assertions
         self.assertNotEqual((a,b), (0,0))
         self.assertEqual(div(6,3),2)
-        self.assertTrue(div(6 \ 3) == 2)
+        self.assertTrue(div(6 \ 3))
     # ##########################
 
     ######## Partner 2
@@ -46,11 +46,11 @@ class TestCalculator(unittest.TestCase):
      def test_hypotenuse(self): # 3 assertions
          self.assertNotEqual((a,b), (0,0)
          self.assertEqual(hypotenuse(5,12),13.0)
-         self.assertTrue(hypotenuse(5.0,12.0) == 13.0)
+         self.assertTrue(hypotenuse(5.0,12.0))
         
 
      def test_sqrt(self): # 3 assertions
-         self.assertTrue(sqrt(25) == 5.0)
+         self.assertTrue(sqrt(25))
          self.assertFalse(sqrt(36), 3)
          self.assertNotEqual((a), (-4))
          

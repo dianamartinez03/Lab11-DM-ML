@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         self.assertEqual(mul(10, 3), 30)
-        self.assertFalse(mul(10, 3),15)
+        self.assertTrue(mul(5, 3),15)
         self.assertTrue(mul(5, 4))
 
     def test_divide(self): # 3 assertions

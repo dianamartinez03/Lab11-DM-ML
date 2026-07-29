@@ -1,5 +1,5 @@
 import unittest
-from calculator import add,sub,div,mult,sqrt,logarithm,hypotenuse
+from calculator import add,subtract,div,mul,square_root,logarithm,hypotenuse
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2

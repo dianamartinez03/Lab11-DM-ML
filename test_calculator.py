@@ -3,55 +3,65 @@ from calculator import add,sub,div,mult,sqrt,logarithm,hypotenuse
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self):
+        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(-10, 50), 40)
+        self.assertEqual(add(-15, -30), -45)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self):
+        self.assertEqual(sub(5, 2), 3)
+        self.assertEqual(sub(-10, 40), -50)
+        self.assertEqual(sub(-15, -15), 0)
     # ##########################
 
     ######## Partner 1
-     def test_multiply(self): # 3 assertions
-        self.assertEqual(mult(10,3), 30)
-        self.assertFalse(mult(10,3),15)
-        self.assertTrue(mult(5,4))
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mult(10, 3), 30)
+        self.assertFalse(mult(10, 3),15)
+        self.assertTrue(mult(5, 4))
 
-     def test_divide(self): # 3 assertions
+    def test_divide(self): # 3 assertions
         self.assertNotEqual((10,3), (0,0))
         self.assertEqual(div(6,3),2)
         self.assertEqual(div(25,5),5)
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+    def test_divide_by_zero(self):
+        try:
+            div(5, 0)
+        except ZeroDivisionError:
+            raise ZeroDivisionError("Divide by zero failed.")
+        # self.assertRaises(ZeroDivisionError, div, 5, 0)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self):
+        self.assertEqual(logarithm(100, 10), 2)
+        self.assertEqual(logarithm(65536, 2), 16)
+        self.assertEqual(logarithm(390625, 5), 8)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
-    #     fill in code
+    def test_log_invalid_base(self):
+        try:
+            logarithm(100, 0)
+        except ValueError:
+            raise ValueError("Invalid base.")
     # ##########################
     
     ######## Partner 1
-     def test_log_invalid_argument(self): # 1 assertion
+    def test_log_invalid_argument(self): # 1 assertion
          self.assertRaises(ZeroDivisionError)
+
     
 
-     def test_hypotenuse(self): # 3 assertions
-         self.assertEqual(hypotenuse(3,4),5)
+    def test_hypotenuse(self): # 3 assertions
+         self.assertEqual(hypotenuse(3, 4), 5)
          self.assertEqual(hypotenuse(5,12),13.0)
-         self.assertNotEqual(hypotenuse(6,9) 10.8)
+         self.assertTrue(hypotenuse(5.0,12.0))
         
 
-     def test_sqrt(self): # 3 assertions
+    def test_sqrt(self): # 3 assertions
          self.assertTrue(sqrt(25))
          self.assertFalse(sqrt(36), 3)
-         self.assertNotEqual(sqrt(49),6)
+         self.assertNotEqual(sqrt(49), 6 )
          
     
          self.assertRaises(ValueError)

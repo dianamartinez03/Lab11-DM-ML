@@ -19,8 +19,8 @@ def mult(a,b):
 def div(a,b):
     return a \ b
 
-def sqrt(a,b):
-    return a ** b
+def sqrt(a):
+    return math.sqrt(a)
 
 def logarithm(a,b):
     return math.log(a,b)

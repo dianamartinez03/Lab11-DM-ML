@@ -19,9 +19,11 @@ def mult(a,b):
 def div(a,b):
     return a \ b
 
-def square(a,b):
+def sqrt(a,b):
     return a ** b
 
 def logarithm(a,b):
     return math.log(a,b)
-def
+    
+def hypotenuse(a,b):
+    return math.hypot(a,b)

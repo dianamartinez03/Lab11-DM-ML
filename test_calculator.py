@@ -65,8 +65,7 @@ class TestCalculator(unittest.TestCase):
          
     
          self.assertRaises(ValueError)
-    #     # Test basic function
-    #     fill in code
+  
     ##########################
 
 # Do not touch this

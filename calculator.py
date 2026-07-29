@@ -4,6 +4,8 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
+
 # First example
 def add(a, b): 
     return a + b
@@ -17,6 +19,9 @@ def mult(a,b):
 def div(a,b):
     return a \ b
 
-def exponent(a,b):
+def square(a,b):
     return a ** b
-    
+
+def logarithm(a,b):
+    return math.log(a,b)
+def

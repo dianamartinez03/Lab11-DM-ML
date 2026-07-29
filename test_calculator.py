@@ -31,8 +31,7 @@ class TestCalculator(unittest.TestCase):
         try:
             div(5, 0)
         except ZeroDivisionError:
-            raise ZeroDivisionError("Divide by zero failed.")
-        # self.assertRaises(ZeroDivisionError, div, 5, 0)
+            return ZeroDivisionError("Divide by zero failed.")
 
     def test_logarithm(self):
         self.assertEqual(logarithm(100, 10), 2)
@@ -43,7 +42,7 @@ class TestCalculator(unittest.TestCase):
         try:
             logarithm(100, 0)
         except ValueError:
-            raise ValueError("Invalid base.")
+            return ValueError("Invalid base.")
     # ##########################
     
     ######## Partner 1

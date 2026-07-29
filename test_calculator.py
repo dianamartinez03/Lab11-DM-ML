@@ -17,7 +17,7 @@ class TestCalculator(unittest.TestCase):
         self.assertTrue(mult(5*4))
 
      def test_divide(self): # 3 assertions
-        self.assertNotEqual((a,b), (0,0))
+        self.assertNotEqual((10,3), (0,0))
         self.assertEqual(div(6,3),2)
         self.assertEqua(div(25,5),5)
     # ##########################

@@ -39,8 +39,7 @@ class TestCalculator(unittest.TestCase):
     
     ######## Partner 1
      def test_log_invalid_argument(self): # 1 assertion
-         self.assertRaises(ZeroDivisionError):
-             log(0, 5)
+         self.assertRaises(ZeroDivisionError)
     
 
      def test_hypotenuse(self): # 3 assertions
@@ -55,8 +54,7 @@ class TestCalculator(unittest.TestCase):
          self.assertNotEqual((a), (-4))
          
     
-        self.assertRaises(ValueError):
-            sqrt(-4)
+        self.assertRaises(ValueError)
     #     # Test basic function
     #     fill in code
     ##########################

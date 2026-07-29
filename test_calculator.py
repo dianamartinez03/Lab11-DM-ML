@@ -12,9 +12,9 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
      def test_multiply(self): # 3 assertions
-        self.assertEqual(mult(10*3), 30)
-        self.assertFalse(mult(10*3),15)
-        self.assertTrue(mult(5*4))
+        self.assertEqual(mult(10,3), 30)
+        self.assertFalse(mult(10,3),15)
+        self.assertTrue(mult(5,4))
 
      def test_divide(self): # 3 assertions
         self.assertNotEqual((10,3), (0,0))
@@ -51,10 +51,10 @@ class TestCalculator(unittest.TestCase):
      def test_sqrt(self): # 3 assertions
          self.assertTrue(sqrt(25))
          self.assertFalse(sqrt(36), 3)
-         self.assertNotEqual((a), (-4))
+         self.assertNotEqual(sqrt(49),6)
          
     
-        self.assertRaises(ValueError)
+         self.assertRaises(ValueError)
     #     # Test basic function
     #     fill in code
     ##########################

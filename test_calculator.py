@@ -15,7 +15,9 @@ class TestCalculator(unittest.TestCase):
     #     fill in code
 
     # def test_divide(self): # 3 assertions
-    #     fill in code
+        self.assertNotEqual((a,b), (0,0))
+        self.assertEqual(div(6,3),2)
+        self.assertTrue(div(6 \ 3) == 2)
     # ##########################
 
     ######## Partner 2

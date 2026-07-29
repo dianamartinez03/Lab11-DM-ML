@@ -59,9 +59,9 @@ class TestCalculator(unittest.TestCase):
         
 
     def test_sqrt(self): # 3 assertions
-         self.assertTrue(sqrt(25))
-         self.assertFalse(sqrt(36), 3)
-         self.assertNotEqual(sqrt(49), 6 )
+         self.assertTrue(square_root(25))
+         self.assertFalse(square_root(36), 3)
+         self.assertNotEqual(square_root(49), 6 )
          
     
          self.assertRaises(ValueError)
